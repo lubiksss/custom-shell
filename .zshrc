@@ -1,3 +1,10 @@
+# enable powerlevel10k instant prompt. should stay close to the top of ~/.zshrc.
+# initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # if you come from bash you might have to change your $path.
 # export path=$home/bin:/usr/local/bin:$path
 

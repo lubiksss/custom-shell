@@ -1,6 +1,10 @@
 #!/bin/zsh
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
+# vim
+apt-get install -y vim
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
 # fasd
 apt-get install -y fasd
 
