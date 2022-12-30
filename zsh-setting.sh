@@ -4,6 +4,8 @@ curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | 
 # vim
 apt-get install -y vim
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+vim +PluginInstall +qall
+mv -rf vim-github-dark ~/.vim/bundle
 
 # fasd
 apt-get install -y fasd
