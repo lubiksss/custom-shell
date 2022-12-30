@@ -1,12 +1,18 @@
 #!/bin/zsh
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
+cp -rf .vimrc ~/.vimrc
+cp -rf .zshrc ~/.zshrc
+
+# powerlevel10k
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+
+# syntax-highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/zsh-syntax-highlighting
+
 # vim
 apt-get install -y vim
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-mv .vimrc ~/.vimrc
-vim +PluginInstall +qall
-mv vim-github-dark ~/.vim/bundle
 
 # fasd
 apt-get install -y fasd
@@ -14,12 +20,5 @@ apt-get install -y fasd
 # fzf
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install --all
-
-# powerlevel10k
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
-echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >> .zshrc
-
-mv .zshrc ~/.zshrc
-mv .p10k.zsh ~/.p10k.zsh
 
 source ~/.zshrc

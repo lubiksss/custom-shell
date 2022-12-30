@@ -15,7 +15,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # setting this variable when zsh_theme=random will cause zsh to load
 # a theme from this variable instead of looking in $zsh/themes/
 # if set to an empty array, this variable will have no effect.
-# zsh_theme_random_candidates=(  "agnoster" )
+# zsh_theme_random_candidates=( "robbyrussell" "agnoster" )
 
 # uncomment the following line to use case-sensitive completion.
 # case_sensitive="true"
@@ -72,8 +72,12 @@ export ZSH="$HOME/.oh-my-zsh"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+docker
 git
+asdf
 fasd
+ripgrep
+vi-mode
 fzf
 )
 
@@ -105,7 +109,13 @@ export LANG=en_US.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
 ####### custom setting #######
+
+# zsh syntax highlighting
+source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # fasd setting
 eval "$(fasd --init auto)"
@@ -135,7 +145,6 @@ alias kc="kubectl"
 alias fp="readlink -f"
 alias grep="rg"
 
-
 # fzf
 export FZF_DEFAULT_OPTS="-i --height 100% --layout=reverse
 --bind ctrl-p:preview-up,ctrl-n:preview-down"
@@ -159,5 +168,4 @@ setopt EXTENDED_HISTORY
 # ADD ~/script to PATH
 export PATH=~/script:$PATH
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+export TERM="screen-256color"
