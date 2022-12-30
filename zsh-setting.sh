@@ -21,10 +21,10 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/zsh-syntax-
 # vim
 $PREFIX apt-get install -y vim
 mkdir -p ~/.vim/colors
-cp -rf gruvbox.vim ~/.vim/colors
-echo 'colorscheme gruvbox' >> ~/.vimrc
-echo 'let g:gruvbox_contrast_dark="hard"' >> ~/.vimrc
-echo 'set background=dark' >> ~/.vimrc
+cp -rf ghdark.vim ~/.vim/colors
+echo 'colorscheme ghdark' >> ~/.vimrc
+echo 'let g:gh_color = "soft"' >> ~/.vimrc
+
 
 # fasd
 $PREFIX apt-get install -y fasd
