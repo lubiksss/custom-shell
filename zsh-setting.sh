@@ -6,7 +6,7 @@ apt-get install -y vim
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 mv .vimrc ~/.vimrc
 vim +PluginInstall +qall
-mv -rf vim-github-dark ~/.vim/bundle
+mv vim-github-dark ~/.vim/bundle
 
 # fasd
 apt-get install -y fasd
