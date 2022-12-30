@@ -67,7 +67,6 @@ export ZSH="$HOME/.oh-my-zsh"
 plugins=(
 git
 fasd
-vi-mode
 fzf
 )
 
