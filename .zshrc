@@ -1,10 +1,3 @@
-# enable powerlevel10k instant prompt. should stay close to the top of ~/.zshrc.
-# initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 # if you come from bash you might have to change your $path.
 # export path=$home/bin:/usr/local/bin:$path
 
@@ -72,11 +65,8 @@ export ZSH="$HOME/.oh-my-zsh"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-docker
 git
-asdf
 fasd
-ripgrep
 vi-mode
 fzf
 )
@@ -109,11 +99,7 @@ export LANG=en_US.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
 ####### custom setting #######
-
 # zsh syntax highlighting
 source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
@@ -167,5 +153,3 @@ setopt EXTENDED_HISTORY
 
 # ADD ~/script to PATH
 export PATH=~/script:$PATH
-
-export TERM="screen-256color"
