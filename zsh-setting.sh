@@ -10,6 +10,7 @@ curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | 
 
 cp -rf .vimrc ~/.vimrc
 cp -rf .zshrc ~/.zshrc
+cp -rf .tmux.conf ~/.tmux.conf
 
 # powerlevel10k
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
