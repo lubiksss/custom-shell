@@ -1,9 +1,16 @@
 #!/bin/bash
-apt-get update
-apt-get install -y curl
-apt-get install -y git
-apt-get install -y zsh
-apt-get install -y tmux
-chsh -s `which zsh`
+USER=`whoami`
+if [ $USER = 'root' ]; then
+	PREFIX=''
+else
+	PREFIX='sudo'
+fi
+
+$PREFIX apt-get update
+$PREFIX apt-get install -y curl
+$PREFIX apt-get install -y git
+$PREFIX apt-get install -y zsh
+$PREFIX apt-get install -y tmux
+$PREFIX chsh -s `which zsh`
 
 ./zsh-setting.sh

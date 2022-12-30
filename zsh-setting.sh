@@ -1,4 +1,11 @@
 #!/bin/zsh
+USER=`whoami`
+if [ $USER = 'root' ]; then
+	PREFIX=''
+else
+	PREFIX='sudo'
+fi
+
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
 cp -rf .vimrc ~/.vimrc
@@ -12,10 +19,10 @@ echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/zsh-syntax-highlighting
 
 # vim
-apt-get install -y vim
+$PREFIX apt-get install -y vim
 
 # fasd
-apt-get install -y fasd
+$PREFIX apt-get install -y fasd
 
 # fzf
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
