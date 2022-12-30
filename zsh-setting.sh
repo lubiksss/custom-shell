@@ -28,4 +28,7 @@ $PREFIX apt-get install -y fasd
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install --all
 
+# vi-mode
+cp -rf vi-mode.plugin.zsh ~/.oh-my-zsh/plugins/vi-mode
+
 source ~/.zshrc
