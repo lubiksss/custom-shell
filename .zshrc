@@ -153,3 +153,5 @@ setopt EXTENDED_HISTORY
 
 # ADD ~/script to PATH
 export PATH=~/script:$PATH
+
+source ~/.bash_profile
