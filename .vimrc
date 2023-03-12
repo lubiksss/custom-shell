@@ -65,6 +65,7 @@ nnoremap <silent> <C-b> :buffers<CR>:buffer<Space>
 
 " custom settings
 set termguicolors
+set t_Co=256
 set hlsearch
 set nu
 set autoindent
