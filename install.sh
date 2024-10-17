@@ -9,7 +9,7 @@ fi
 $PREFIX apt-get update
 $PREFIX apt-get install -y curl
 $PREFIX apt-get install -y xclip
-$PREFIX apt-get install -y language-pack-ko
+$PREFIX apt-get install -y language-pack-en
 
 $PREFIX apt-get install -y git
 $PREFIX apt-get install -y gh
