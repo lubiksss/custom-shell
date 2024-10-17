@@ -4,11 +4,13 @@
 # path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+
 # set list of themes to pick from when loading at random
 # setting this variable when zsh_theme=random will cause zsh to load
 # a theme from this variable instead of looking in $zsh/themes/
 # if set to an empty array, this variable will have no effect.
 # zsh_theme_random_candidates=( "robbyrussell" "agnoster" )
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # uncomment the following line to use case-sensitive completion.
 # case_sensitive="true"
@@ -148,7 +150,8 @@ fd() {
 
 # github
 alias ggv="gh gist list|cat|fzf|awk '{print \$1}'|xargs gh gist view"
-alias ggp="gh gist list|cat|fzf|awk '{print \$1}'|xargs gh gist view |pc"
+alias ggp="gh gist list|cat|fzf|awk '{print \$1}'|xargs gh gist view |xclip -selection clipboard"
+alias ggo="gh gist list|cat|fzf|awk '{print \$1}'|xargs gh gist view >"
 
 # history size
 export HISTFILE=$HOME/.zsh_history
@@ -172,5 +175,3 @@ setopt HIST_REDUCE_BLANKS        # Remove superfluous blanks before recording en
 
 # ADD ~/script to PATH
 export PATH=~/script:$PATH
-
-source ~/.bash_profile
