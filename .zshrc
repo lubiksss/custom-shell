@@ -153,11 +153,12 @@ fd() {
 	  |fzf --preview 'tree -C -L 1 {}' --preview-window 'right,50%,border-left,~1')
   cd "$dir"
 }
+export LANG=ko_KR.UTF-8;
+export LC_ALL=ko_KR.UTF-8;
+export LANGUAGE=ko_KR.UTF-8;
 
 # github
 alias ggv="gh gist list|cat|fzf|awk '{print \$1}'|xargs gh gist view"
-alias ggp="gh gist list|cat|fzf|awk '{print \$1}'|xargs gh gist view |xclip -selection clipboard"
-alias ggo="gh gist list|cat|fzf|awk '{print \$1}'|xargs gh gist view >"
 
 # history size
 export HISTFILE=$HOME/.zsh_history
