@@ -125,6 +125,7 @@ source "$fasd_cache"
 unset fasd_cache
 
 # custom alias
+alias lsa="ls -alh"
 alias pc="pbcopy"
 alias ghw="gh repo view -w"
 alias gsc="git add .;git stash;git stash clear"
