@@ -19,4 +19,6 @@ $PREFIX apt-get install -y ripgrep
 
 $PREFIX chsh -s `which zsh`
 
+echo "Asia/Seoul" | sudo tee /etc/timezone
+
 ./zsh-setting.sh
