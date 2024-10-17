@@ -24,7 +24,6 @@ $PREFIX apt-get install -y vim
 mkdir -p ~/.vim
 cp -rf bundle ~/.vim/bundle
 
-
 # fasd
 $PREFIX apt-get install -y fasd
 

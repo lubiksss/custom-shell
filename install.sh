@@ -9,6 +9,7 @@ fi
 $PREFIX apt-get update
 $PREFIX apt-get install -y curl
 $PREFIX apt-get install -y git
+$PREFIX apt-get install -y gh
 $PREFIX apt-get install -y zsh
 $PREFIX apt-get install -y tmux
 $PREFIX apt-get install -y ripgrep

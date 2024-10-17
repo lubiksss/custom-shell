@@ -146,6 +146,10 @@ fd() {
   cd "$dir"
 }
 
+# github
+alias ggv="gh gist list|cat|fzf|awk '{print \$1}'|xargs gh gist view"
+alias ggp="gh gist list|cat|fzf|awk '{print \$1}'|xargs gh gist view |pc"
+
 # history size
 export HISTFILE=$HOME/.zsh_history
 export HISTSIZE=1000000000
