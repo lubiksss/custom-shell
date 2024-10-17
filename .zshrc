@@ -10,7 +10,6 @@ export ZSH="$HOME/.oh-my-zsh"
 # a theme from this variable instead of looking in $zsh/themes/
 # if set to an empty array, this variable will have no effect.
 # zsh_theme_random_candidates=( "robbyrussell" "agnoster" )
-ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # uncomment the following line to use case-sensitive completion.
 # case_sensitive="true"
