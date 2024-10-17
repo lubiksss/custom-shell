@@ -16,6 +16,8 @@ cp -rf .p10k.zsh ~/.p10k.zsh
 # powerlevel10k
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+echo '[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh' >>~/.zshrc
 
 # syntax-highlighting
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/zsh-syntax-highlighting
