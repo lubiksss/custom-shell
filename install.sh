@@ -17,8 +17,9 @@ $PREFIX apt-get install -y zsh
 $PREFIX apt-get install -y tmux
 $PREFIX apt-get install -y ripgrep
 
-$PREFIX chsh -s `which zsh`
+export DEBIAN_FRONTED=noninteractive
+$PREFIX apt-get install -y tzdata
 
-echo "Asia/Seoul" | sudo tee /etc/timezone
+$PREFIX chsh -s `which zsh`
 
 ./zsh-setting.sh
