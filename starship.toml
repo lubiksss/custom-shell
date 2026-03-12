@@ -1,0 +1,47 @@
+command_timeout = 10000
+
+[directory]
+truncation_length = 0
+truncate_to_repo = false
+
+[git_branch]
+symbol = "\ue0a0 "
+format = '[$symbol$branch(:$remote_branch)]($style) '
+
+[golang]
+symbol = "\ue627 "
+format = '[$symbol($version )]($style)'
+
+[java]
+symbol = "\ue256 "
+format = '[$symbol($version )]($style)'
+
+[nodejs]
+symbol = "\ue718 "
+format = '[$symbol($version )]($style)'
+
+[python]
+symbol = "\ue73c "
+format = '[$symbol($version )]($style)'
+
+[kotlin]
+symbol = "\ue634 "
+format = '[$symbol($version )]($style)'
+
+[package]
+symbol = "\uf487 "
+format = '[$symbol$version]($style) '
+
+[kubernetes]
+symbol = "\ufd31 "
+format = '[$symbol$context( \($namespace\))]($style) '
+
+[docker_context]
+symbol = "\ue7b0 "
+
+[gradle]
+symbol = "\ue70e "
+format = '[$symbol($version )]($style)'
+
+[git_status]
+format = '([$all_status$ahead_behind]($style) )'
