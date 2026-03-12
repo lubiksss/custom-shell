@@ -38,6 +38,7 @@ format = '[$symbol$context( \($namespace\))]($style) '
 
 [docker_context]
 symbol = "\ue7b0 "
+format = '[$symbol$context]($style) '
 
 [gradle]
 symbol = "\ue70e "
@@ -45,3 +46,9 @@ format = '[$symbol($version )]($style)'
 
 [git_status]
 format = '([$all_status$ahead_behind]($style) )'
+
+[hostname]
+format = '[$ssh_symbol$hostname]($style) '
+
+[cmd_duration]
+format = '[$duration]($style) '
