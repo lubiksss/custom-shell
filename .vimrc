@@ -44,9 +44,6 @@ autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTa
 " Show hidden file in NERDTree
 let NERDTreeShowHidden=1
 
-" fzf settings
-nnoremap <C-p> :FZF!~<Cr>
-let g:fzf_layout = {'down':'40%'}
 
 " color scheme 
 colorscheme ghdark
@@ -60,12 +57,8 @@ if has("syntax")
 	syntax on
 endif
 
-" buffer setting
-nnoremap <silent> <C-b> :buffers<CR>:buffer<Space>
-
 " custom settings
 set termguicolors
-set t_Co=256
 set hlsearch
 set nu
 set autoindent
