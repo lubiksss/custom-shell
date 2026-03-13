@@ -1,54 +1,252 @@
-command_timeout = 10000
-
 [directory]
 truncation_length = 0
 truncate_to_repo = false
+read_only = " 󰌾"
 
-[git_branch]
-symbol = "\ue0a0 "
-format = '[$symbol$branch(:$remote_branch)]($style) '
+[custom.git_account]
+command = "git config user.name"
+when = "git rev-parse --is-inside-work-tree 2>/dev/null"
+format = "[ $output]($style) "
+style = "yellow"
 
-[golang]
-symbol = "\ue627 "
-format = '[$symbol($version )]($style)'
+[aws]
+symbol = " "
 
-[java]
-symbol = "\ue256 "
-format = '[$symbol($version )]($style)'
+[buf]
+format = "[$symbol($version )]($style)"
+symbol = " "
 
-[nodejs]
-symbol = "\ue718 "
-format = '[$symbol($version )]($style)'
+[bun]
+format = "[$symbol($version )]($style)"
+symbol = " "
 
-[python]
-symbol = "\ue73c "
-format = '[$symbol($version )]($style)'
+[c]
+format = "[$symbol($version )]($style)"
+symbol = " "
 
-[kotlin]
-symbol = "\ue634 "
-format = '[$symbol($version )]($style)'
+[cpp]
+format = "[$symbol($version )]($style)"
+symbol = " "
 
-[package]
-symbol = "\uf487 "
-format = '[$symbol$version]($style) '
+[cmake]
+format = "[$symbol($version )]($style)"
+symbol = " "
 
-[kubernetes]
-symbol = "\ufd31 "
-format = '[$symbol$context( \($namespace\))]($style) '
+[conda]
+format = "[$symbol($version )]($style)"
+symbol = " "
+
+[crystal]
+format = "[$symbol($version )]($style)"
+symbol = " "
+
+[dart]
+format = "[$symbol($version )]($style)"
+symbol = " "
+
+[deno]
+format = "[$symbol($version )]($style)"
+symbol = " "
 
 [docker_context]
-symbol = "\ue7b0 "
-format = '[$symbol$context]($style) '
+format = "[$symbol($version )]($style)"
+symbol = " "
+
+[elixir]
+format = "[$symbol($version )]($style)"
+symbol = " "
+
+[elm]
+format = "[$symbol($version )]($style)"
+symbol = " "
+
+[fennel]
+format = "[$symbol($version )]($style)"
+symbol = " "
+
+[fortran]
+format = "[$symbol($version )]($style)"
+symbol = " "
+
+[fossil_branch]
+symbol = " "
+
+[gcloud]
+format = "[$symbol$account]($style) "
+symbol = " "
+
+[git_branch]
+format = "[$symbol$branch(:$remote_branch)]($style) "
+symbol = " "
+
+[git_commit]
+tag_symbol = '  '
+
+[golang]
+format = "[$symbol($version )]($style)"
+symbol = " "
 
 [gradle]
-symbol = "\ue70e "
-format = '[$symbol($version )]($style)'
+format = "[$symbol($version )]($style)"
+symbol = " "
 
-[git_status]
-format = '([$all_status$ahead_behind]($style) )'
+[guix_shell]
+format = "[$symbol($version )]($style)"
+symbol = " "
+
+[haskell]
+format = "[$symbol($version )]($style)"
+symbol = " "
+
+[haxe]
+format = "[$symbol($version )]($style)"
+symbol = " "
+
+[hg_branch]
+symbol = " "
 
 [hostname]
-format = '[$ssh_symbol$hostname]($style) '
+ssh_symbol = " "
 
-[cmd_duration]
-format = '[$duration]($style) '
+[java]
+format = "[$symbol($version )]($style)"
+symbol = " "
+
+[julia]
+format = "[$symbol($version )]($style)"
+symbol = " "
+
+[kotlin]
+format = "[$symbol($version )]($style)"
+symbol = " "
+
+[lua]
+format = "[$symbol($version )]($style)"
+symbol = " "
+
+[memory_usage]
+symbol = "󰍛 "
+
+[meson]
+format = "[$symbol($version )]($style)"
+symbol = "󰔷 "
+
+[nim]
+format = "[$symbol($version )]($style)"
+symbol = "󰆥 "
+
+[nix_shell]
+format = "[$symbol($version )]($style)"
+symbol = " "
+
+[nodejs]
+format = "[$symbol($version )]($style)"
+symbol = " "
+
+[ocaml]
+format = "[$symbol($version )]($style)"
+symbol = " "
+
+[os.symbols]
+Alpaquita = " "
+Alpine = " "
+AlmaLinux = " "
+Amazon = " "
+Android = " "
+AOSC = " "
+Arch = " "
+Artix = " "
+CachyOS = " "
+CentOS = " "
+Debian = " "
+DragonFly = " "
+Elementary = " "
+Emscripten = " "
+EndeavourOS = " "
+Fedora = " "
+FreeBSD = " "
+Garuda = "󰛓 "
+Gentoo = " "
+HardenedBSD = "󰞌 "
+Illumos = "󰈸 "
+Ios = "󰀷 "
+Kali = " "
+Linux = " "
+Mabox = " "
+Macos = " "
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
+Mint = " "
+NetBSD = " "
+NixOS = " "
+Nobara = " "
+OpenBSD = "󰈺 "
+openSUSE = " "
+OracleLinux = "󰌷 "
+Pop = " "
+Raspbian = " "
+Redhat = " "
+RedHatEnterprise = " "
+RockyLinux = " "
+Redox = "󰀘 "
+Solus = "󰠳 "
+SUSE = " "
+Ubuntu = " "
+Unknown = " "
+Void = " "
+Windows = "󰍲 "
+Zorin = " "
+
+[package]
+symbol = "󰏗 "
+
+[perl]
+format = "[$symbol($version )]($style)"
+symbol = " "
+
+[php]
+format = "[$symbol($version )]($style)"
+symbol = " "
+
+[pijul_channel]
+symbol = " "
+
+[pixi]
+format = "[$symbol($version )]($style)"
+symbol = "󰏗 "
+
+[python]
+format = "[$symbol($version )]($style)"
+symbol = " "
+
+[rlang]
+format = "[$symbol($version )]($style)"
+symbol = "󰟔 "
+
+[ruby]
+format = "[$symbol($version )]($style)"
+symbol = " "
+
+[rust]
+format = "[$symbol($version )]($style)"
+symbol = "󱘗 "
+
+[scala]
+format = "[$symbol($version )]($style)"
+symbol = " "
+
+[status]
+symbol = " "
+
+[swift]
+format = "[$symbol($version )]($style)"
+symbol = " "
+
+[xmake]
+format = "[$symbol($version )]($style)"
+symbol = " "
+
+[zig]
+format = "[$symbol($version )]($style)"
+symbol = " "
