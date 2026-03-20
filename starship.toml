@@ -1,105 +1,83 @@
+format = "$directory$git_branch\n$character"
+
 [directory]
+format = "[ $path]($style)"
+style = "cyan"
 truncation_length = 0
 truncate_to_repo = false
 read_only = " 󰌾"
-
-[custom.git_account]
-command = "git config user.name"
-when = "git rev-parse --is-inside-work-tree 2>/dev/null"
-format = "[ $output]($style) "
-style = "yellow"
 
 [aws]
 symbol = " "
 
 [buf]
-format = "[$symbol($version )]($style)"
 symbol = " "
 
 [bun]
-format = "[$symbol($version )]($style)"
 symbol = " "
 
 [c]
-format = "[$symbol($version )]($style)"
 symbol = " "
 
 [cpp]
-format = "[$symbol($version )]($style)"
 symbol = " "
 
 [cmake]
-format = "[$symbol($version )]($style)"
 symbol = " "
 
 [conda]
-format = "[$symbol($version )]($style)"
 symbol = " "
 
 [crystal]
-format = "[$symbol($version )]($style)"
 symbol = " "
 
 [dart]
-format = "[$symbol($version )]($style)"
 symbol = " "
 
 [deno]
-format = "[$symbol($version )]($style)"
 symbol = " "
 
 [docker_context]
-format = "[$symbol($version )]($style)"
 symbol = " "
 
 [elixir]
-format = "[$symbol($version )]($style)"
 symbol = " "
 
 [elm]
-format = "[$symbol($version )]($style)"
 symbol = " "
 
 [fennel]
-format = "[$symbol($version )]($style)"
 symbol = " "
 
 [fortran]
-format = "[$symbol($version )]($style)"
 symbol = " "
 
 [fossil_branch]
 symbol = " "
 
 [gcloud]
-format = "[$symbol$account]($style) "
 symbol = " "
 
 [git_branch]
-format = "[$symbol$branch(:$remote_branch)]($style) "
-symbol = " "
+format = "[  $branch]($style)"
+style = "purple"
 
 [git_commit]
 tag_symbol = '  '
 
 [golang]
-format = "[$symbol($version )]($style)"
 symbol = " "
 
 [gradle]
-format = "[$symbol($version )]($style)"
 symbol = " "
 
 [guix_shell]
-format = "[$symbol($version )]($style)"
 symbol = " "
 
 [haskell]
-format = "[$symbol($version )]($style)"
 symbol = " "
 
 [haxe]
-format = "[$symbol($version )]($style)"
 symbol = " "
 
 [hg_branch]
@@ -109,42 +87,33 @@ symbol = " "
 ssh_symbol = " "
 
 [java]
-format = "[$symbol($version )]($style)"
 symbol = " "
 
 [julia]
-format = "[$symbol($version )]($style)"
 symbol = " "
 
 [kotlin]
-format = "[$symbol($version )]($style)"
 symbol = " "
 
 [lua]
-format = "[$symbol($version )]($style)"
 symbol = " "
 
 [memory_usage]
 symbol = "󰍛 "
 
 [meson]
-format = "[$symbol($version )]($style)"
 symbol = "󰔷 "
 
 [nim]
-format = "[$symbol($version )]($style)"
 symbol = "󰆥 "
 
 [nix_shell]
-format = "[$symbol($version )]($style)"
 symbol = " "
 
 [nodejs]
-format = "[$symbol($version )]($style)"
 symbol = " "
 
 [ocaml]
-format = "[$symbol($version )]($style)"
 symbol = " "
 
 [os.symbols]
@@ -202,51 +171,40 @@ Zorin = " "
 symbol = "󰏗 "
 
 [perl]
-format = "[$symbol($version )]($style)"
 symbol = " "
 
 [php]
-format = "[$symbol($version )]($style)"
 symbol = " "
 
 [pijul_channel]
 symbol = " "
 
 [pixi]
-format = "[$symbol($version )]($style)"
 symbol = "󰏗 "
 
 [python]
-format = "[$symbol($version )]($style)"
 symbol = " "
 
 [rlang]
-format = "[$symbol($version )]($style)"
 symbol = "󰟔 "
 
 [ruby]
-format = "[$symbol($version )]($style)"
 symbol = " "
 
 [rust]
-format = "[$symbol($version )]($style)"
 symbol = "󱘗 "
 
 [scala]
-format = "[$symbol($version )]($style)"
 symbol = " "
 
 [status]
 symbol = " "
 
 [swift]
-format = "[$symbol($version )]($style)"
 symbol = " "
 
 [xmake]
-format = "[$symbol($version )]($style)"
 symbol = " "
 
 [zig]
-format = "[$symbol($version )]($style)"
 symbol = " "
